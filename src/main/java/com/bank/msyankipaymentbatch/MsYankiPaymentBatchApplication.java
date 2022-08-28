@@ -1,13 +1,13 @@
-package com.bank.msyankipaymentbackend;
+package com.bank.msyankipaymentbatch;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MsYankiPaymentBackendApplication {
+public class MsYankiPaymentBatchApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MsYankiPaymentBackendApplication.class, args);
+		SpringApplication.run(MsYankiPaymentBatchApplication.class, args);
 	}
 
 }
