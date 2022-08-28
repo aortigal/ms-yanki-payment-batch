@@ -23,7 +23,7 @@ public class ProcessPaymentServiceImpl implements ProcessPaymentService {
 
     @Override
     public void process(DataEvent<Payment> dataEvent) {
-        log.info("[INI] Process");
+        log.info("[INI] Process {}", dataEvent.getId());
         if(dataEvent.getProcess().equals(Constant.PROCESS_PAYMENT_CREATE)){
             log.info("save Payment");
             paymentService.create(dataEvent.getData());
@@ -34,7 +34,7 @@ public class ProcessPaymentServiceImpl implements ProcessPaymentService {
             log.info("Procces Invalid {}", dataEvent.getProcess());
         }
 
-        log.info("[END] Process");
+        log.info("[END] Process {}", dataEvent.getId());
     }
 
 }
