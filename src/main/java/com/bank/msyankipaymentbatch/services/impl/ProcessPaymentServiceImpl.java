@@ -1,7 +1,6 @@
 package com.bank.msyankipaymentbatch.services.impl;
 
 import com.bank.msyankipaymentbatch.constants.Constant;
-import com.bank.msyankipaymentbatch.consumer.KafkaConsumer;
 import com.bank.msyankipaymentbatch.models.documents.Payment;
 import com.bank.msyankipaymentbatch.models.utils.DataEvent;
 import com.bank.msyankipaymentbatch.services.PaymentService;
@@ -11,7 +10,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 
 @Service
 public class ProcessPaymentServiceImpl implements ProcessPaymentService {
