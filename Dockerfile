@@ -5,6 +5,6 @@ RUN mvn -B package --file /usr/src/app/pom.xml
 
 FROM openjdk:11
 EXPOSE 8072
-COPY --from=build /usr/src/app/target/ms-yanki-customer-backend-0.0.1-SNAPSHOT.jar /usr/app/ms-yanki-customer-backend-0.0.1-SNAPSHOT.jar
-ADD target/ms-yanki-customer-backend-0.0.1-SNAPSHOT.jar app.jar
-ENTRYPOINT ["java","-jar","/usr/app/ms-yanki-customer-backend-0.0.1-SNAPSHOT.jar"]
+COPY --from=build /usr/src/app/target/ms-yanki-payment-batch-0.0.1-SNAPSHOT.jar /usr/app/ms-yanki-payment-batch-0.0.1-SNAPSHOT.jar
+ADD target/ms-yanki-payment-batch-0.0.1-SNAPSHOT.jar app.jar
+ENTRYPOINT ["java","-jar","/usr/app/ms-yanki-payment-batch-0.0.1-SNAPSHOT.jar"]
