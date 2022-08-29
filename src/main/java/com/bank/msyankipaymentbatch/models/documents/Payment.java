@@ -16,9 +16,9 @@ public class Payment extends Audit {
 
     private String recipientPhone;
 
-    private String comissionMont;
+    private String comissionAmount;
 
-    private float mont;
+    private float amount;
 
     private String customerId;
 
