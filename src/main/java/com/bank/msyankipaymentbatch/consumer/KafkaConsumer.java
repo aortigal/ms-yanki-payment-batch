@@ -23,12 +23,10 @@ public class KafkaConsumer {
     public void consume(String message) {
         log.info("[INI] Consume");
         log.info("Consuming Message {}", message);
-        try{
-            ObjectMapper objectMapper = new ObjectMapper();
-            DataEvent<Payment> dataEvent = objectMapper.readValue(message, new TypeReference<DataEvent<Payment>>() {});
-            processPaymentService.process(dataEvent);
-        }catch (JsonProcessingException e){
-            log.error("JsonProcessingException {}", e.getMessage());
+        try {
+            processPaymentService.process(message);
+        } catch (JsonProcessingException e) {
+            log.error(e.getMessage());
         }
 
         log.info("[END] Consume");

@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bank</groupId>
-	<artifactId>ms-yanki-payment-batch</artifactId>
+	<artifactId>ms-yanki-wallet-batch</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ms-yanki-payment-batch</name>
-	<description>ms-yanki-payment-batch</description>
+	<name>ms-yanki-wallet-batch</name>
+	<description>ms-yanki-wallet-batch</description>
 	<properties>
 		<java.version>11</java.version>
 		<spring-cloud.version>2021.0.3</spring-cloud.version>
